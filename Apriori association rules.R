@@ -56,8 +56,8 @@ apriori_output <- association_rules(sample)
 summary(apriori_output)
 inspect(apriori_output)
 
-#apriori_output_large <- association_rules(sample, supp = 0.01, conf = 0.05)
-#plot(apriori_output_large, method = "two-key plot")
+apriori_output_large <- association_rules(sample, supp = 0.01, conf = 0.05)
+plot(apriori_output_large, method = "two-key plot")
 
 
 
